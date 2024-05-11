@@ -31,7 +31,6 @@ def get_event_vars(event):
     print("target_path_root: %s" % (config.target_path_root))
     
 
-
 def lambda_handler(event, context):
     # print start datetime
     now = datetime.now()
@@ -48,30 +47,32 @@ def lambda_handler(event, context):
     source_bucket_name = config.source_bucket_name
     source_dataset_prefix = config.source_dataset_prefix
     source_object_keys = s3_util.get_s3_object_keys_by_prefix(source_bucket_name, source_dataset_prefix)
-    print("[DEBUG] source_object_keys: %s" % (source_object_keys))
-
-
+    print("[DEBUG] download_s3_objects: source_object_keys: %s" % (source_object_keys))
+    
+    # download files
+    s3_util.download_s3_objects(source_bucket_name, source_object_keys)
+    
     # end
     print('\n... Thaaat\'s all, Folks!')
-
+    
     # print end datetime
     now = datetime.now()
     print("End dateime: %s" % (now))
-
-
+    
+    
 if __name__ == '__main__':
     # read arguments
     ap = argparse.ArgumentParser()
     ap.add_argument("-t", "--task-spec", required=True, help="Task specification.")
     args = vars(ap.parse_args())
-    print("download-s3-objects: args = %s" % (args))
+    print("download_s3_objects: args = %s" % (args))
 
     # load json file
     task_spec_file_name = args['task_spec']
     f = open(task_spec_file_name)
     event = json.load(f)
     f.close()
-    print("download-s3-objects: task_spec = %s" % (event))
+    print("download_s3_objects: task_spec = %s" % (event))
 
     # create test context
     context = {}

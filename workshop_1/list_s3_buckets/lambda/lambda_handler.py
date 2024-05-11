@@ -56,14 +56,14 @@ if __name__ == '__main__':
     ap = argparse.ArgumentParser()
     ap.add_argument("-t", "--task-spec", required=True, help="Task specification.")
     args = vars(ap.parse_args())
-    print("download-s3-objects: args = %s" % (args))
+    print("list_s3_buckets: args = %s" % (args))
 
     # load json file
     task_spec_file_name = args['task_spec']
     f = open(task_spec_file_name)
     event = json.load(f)
     f.close()
-    print("download-s3-objects: task_spec = %s" % (event))
+    print("list_s3_buckets: task_spec = %s" % (event))
 
     # create test context
     context = {}
