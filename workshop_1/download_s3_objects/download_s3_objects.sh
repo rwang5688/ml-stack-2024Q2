@@ -2,5 +2,5 @@
 
 echo "[CMD] python main.py"
 cd lambda
-python ./main.py --task-spec ../$1
+python ./lambda_handler.py --task-spec ../$1
 cd ..
