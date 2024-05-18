@@ -3,5 +3,5 @@
     "region_name": "us-west-2",
     "source_bucket_name": "ml-stack-123456789012-us-west-2",
     "source_dataset_prefix": "test_datasets",
-    "target_path_root": "/tmp"
+    "target_path_root": "../downloads"
 }
