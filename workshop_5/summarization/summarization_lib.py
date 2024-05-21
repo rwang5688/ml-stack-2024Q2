@@ -1,5 +1,6 @@
 from langchain.prompts import PromptTemplate
-from langchain_community.llms import Bedrock
+#from langchain_community.llms import Bedrock
+from langchain_aws import BedrockLLM
 from langchain.chains.summarize import load_summarize_chain
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import PyPDFLoader
@@ -18,7 +19,8 @@ def get_llm():
         "frequencyPenalty": {"scale": 0 } 
     }
     
-    llm = Bedrock(
+#    llm = Bedrock(
+    llm = BedrockLLM(
         model_id="ai21.j2-ultra-v1", #set the foundation model
         model_kwargs=model_kwargs) #configure the inference parameters
     

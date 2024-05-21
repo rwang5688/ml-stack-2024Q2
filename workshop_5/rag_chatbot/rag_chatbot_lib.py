@@ -1,5 +1,6 @@
 from langchain.memory import ConversationBufferWindowMemory
-from langchain_community.chat_models import BedrockChat
+#from langchain_community.chat_models import BedrockChat
+from langchain_aws import ChatBedrock
 from langchain.chains import ConversationalRetrievalChain
 
 from langchain_community.embeddings import BedrockEmbeddings
@@ -20,7 +21,8 @@ def get_llm():
         "stop_sequences": ["\n\nHuman:"] 
     }
     
-    llm = BedrockChat(
+#    llm = BedrockChat(
+    llm = ChatBedrock(
         model_id="anthropic.claude-3-sonnet-20240229-v1:0", #set the foundation model
         model_kwargs=model_kwargs) #configure the inference parameters
     
