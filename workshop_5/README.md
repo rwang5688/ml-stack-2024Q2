@@ -1,31 +1,37 @@
 ## AWS Workshop 5 - Streamlit Apps with Amazon Bedrock and LangChain
 
-### Generative AI on Amazon SageMaker (JumpStart) Workshop
+### Building with Amazon Bedrock and LangChain Workshop
 
-Workshop: https://catalog.us-east-1.prod.workshops.aws/workshops/972fd252-36e5-4eed-8608-743e84957f8e/en-US
+Workshop: https://catalog.workshops.aws/building-with-amazon-bedrock/en-US
 
-Repo: https://github.com/aws-samples/amazon-sagemaker-generativeai
+Code: https://static.us-east-1.prod.workshops.aws/public/297033e7-0fa7-422f-9fd5-c6315d3acaf5/assets/workshop.zip
 
-#### Run inference on a pre-trained text to image Stable Diffusion model
+#### Chatbot with RAG (Retrieval Augmented Generation)
 
-Lab: https://catalog.us-east-1.prod.workshops.aws/workshops/972fd252-36e5-4eed-8608-743e84957f8e/en-US/lab1/text-to-image/option1
+Lab: https://catalog.workshops.aws/building-with-amazon-bedrock/en-US/intermediate/bedrock-rag-chatbot
 
-Notebook: https://github.com/aws-samples/amazon-sagemaker-generativeai/blob/main/text-to-image/stable-diffusion-inference.ipynb
+Directory: workshop/completed/rag_chatbot
 
-#### Fine-tune the pre-trained text to image model on a custom dataset
+Scripts: rag_chatbot_app.py, rag_chatbot_lib.py
 
-Lab: https://catalog.us-east-1.prod.workshops.aws/workshops/972fd252-36e5-4eed-8608-743e84957f8e/en-US/lab1/text-to-image/option2
+Test file: 2022-Shareholder-Letter.pdf
 
-Notebook: https://github.com/aws-samples/amazon-sagemaker-generativeai/blob/main/text-to-image/stable-diffusion-finetune.ipynb
+#### Document Summarization
 
-### Amazon Bedrock Workshop
+Lab: https://catalog.workshops.aws/building-with-amazon-bedrock/en-US/intermediate/bedrock-summarization
 
-Workshop: https://catalog.us-east-1.prod.workshops.aws/workshops/a4bdb007-5600-4368-81c5-ff5b4154f518/en-US
+Directory: workshop/completed/summarization
 
-Repo: https://github.com/aws-samples/amazon-bedrock-workshop
+Scripts: summarization_app.py, summarization_lib.py
 
-### Customize models in Amazon Bedrock with your own data using fine-tuning and continued pre-training
+Test file: 2022-Shareholder-Letter.pdf
 
-Docs: https://docs.aws.amazon.com/bedrock/latest/userguide/custom-models.html
+### Amazon Kendra LangChain Extensions
 
-Blog post: https://aws.amazon.com/blogs/aws/customize-models-in-amazon-bedrock-with-your-own-data-using-fine-tuning-and-continued-pre-training/
+NOTE: This application requires setting up an Amazon Kendra index.  Please see Amazon Kendra pricing and blog post for details.
+
+Amazon Kendra pricing: https://aws.amazon.com/kendra/pricing/
+
+Blog post: https://aws.amazon.com/blogs/machine-learning/quickly-build-high-accuracy-generative-ai-applications-on-enterprise-data-using-amazon-kendra-langchain-and-large-language-models/
+
+Repo: https://github.com/aws-samples/amazon-kendra-langchain-extensions

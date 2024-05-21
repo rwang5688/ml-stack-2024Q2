@@ -26,6 +26,6 @@ Repo: https://github.com/aws-samples/amazon-bedrock-workshop
 
 ### Customize models in Amazon Bedrock with your own data using fine-tuning and continued pre-training
 
-Docs: https://docs.aws.amazon.com/bedrock/latest/userguide/custom-models.html
-
 Blog post: https://aws.amazon.com/blogs/aws/customize-models-in-amazon-bedrock-with-your-own-data-using-fine-tuning-and-continued-pre-training/
+
+Docs: https://docs.aws.amazon.com/bedrock/latest/userguide/custom-models.html
