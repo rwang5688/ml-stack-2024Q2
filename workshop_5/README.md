@@ -4,7 +4,7 @@
 
 Conversational Chatbot lab: https://catalog.us-east-1.prod.workshops.aws/workshops/0b6e72fe-77ee-4777-98cc-237eec795fdb/en-US/fm/06-chatbot
 
-Please follow the deployment instructions in "The Deployment Package" section.
+See bedrock_workshop_chatbot/README.md for installation instructions.
 
 ### Building with Amazon Bedrock and LangChain Workshop
 
