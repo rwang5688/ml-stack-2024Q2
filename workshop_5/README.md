@@ -1,5 +1,11 @@
 ## AWS Workshop 5 - Streamlit Apps with Amazon Bedrock and LangChain
 
+### Amazon Bedrock Development Workshop
+
+Conversational Chatbot lab: https://catalog.us-east-1.prod.workshops.aws/workshops/0b6e72fe-77ee-4777-98cc-237eec795fdb/en-US/fm/06-chatbot
+
+Please follow the deployment instructions in "The Deployment Package" section.
+
 ### Building with Amazon Bedrock and LangChain Workshop
 
 Workshop: https://catalog.workshops.aws/building-with-amazon-bedrock/en-US
