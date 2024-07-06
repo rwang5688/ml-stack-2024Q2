@@ -1,8 +1,8 @@
-### Amazon Bedrock Development Workshop
+### Amazon Bedrock Development Workshop - Conversational Chatbot Lab
 
-Conversational Chatbot lab: https://catalog.us-east-1.prod.workshops.aws/workshops/0b6e72fe-77ee-4777-98cc-237eec795fdb/en-US/fm/06-chatbot
+Lab content: https://catalog.us-east-1.prod.workshops.aws/workshops/0b6e72fe-77ee-4777-98cc-237eec795fdb/en-US/fm/06-chatbot
 
-Installation instructions:
+Deployment instructions:
 
 1. Create a bucket with name: `bedrock-workshop-${AWS::AccountId}-${AWS::Region}``.
 
