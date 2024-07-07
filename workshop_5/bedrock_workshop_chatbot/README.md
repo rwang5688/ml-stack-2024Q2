@@ -1,12 +1,12 @@
-### Amazon Bedrock Development Workshop - Conversational Chatbot Lab
+### Bedrock Converse API: Amazon Bedrock Development Workshop - Conversational Chatbot
 
 Lab content: https://catalog.us-east-1.prod.workshops.aws/workshops/0b6e72fe-77ee-4777-98cc-237eec795fdb/en-US/fm/06-chatbot
 
-Deployment instructions:
+Deployment and Test instructions:
 
-1. Create a bucket with name: `bedrock-workshop-${AWS::AccountId}-${AWS::Region}``.
+1. Create a deployment S3 bucket with name: `bedrock-workshop-${AWS::AccountId}-${AWS::Region}``.
 
-2. Create a Lambda function with latest Python runtime and name: `BedrockWorkshopChatbot`.
+2. Create and configure a Lambda function with latest Python runtime and name: `BedrockWorkshopChatbot`.
 
 - Navigate to Configuration > General Configuration.
 - Set max values for timeout (15 minutes), memory (10240 MB), and ephemeral storage (10240 MB).
@@ -64,7 +64,7 @@ Deployment instructions:
 }
 ```
 
-3. Create an API Gateway API with name: `BedrockWorkshopChatbot` and stage: `demo`.
+3. Create and configure an API Gateway API with name: `BedrockWorkshopChatbot` and stage: `demo`.
 
 - Create an `ANY` method of Lambda function type.
 - Set Lambda proxy integration to `True`.
@@ -73,6 +73,6 @@ Deployment instructions:
  
 4. Change working directory to: `bedrock_workshop_chatbot`.
 
-5. Follow the deployment instructions in `The Deployment Package` and `Deployment` sections of the Conversational Chatbot lab: https://catalog.us-east-1.prod.workshops.aws/workshops/0b6e72fe-77ee-4777-98cc-237eec795fdb/en-US/fm/06-chatbot ...
+5. Execute deployment instructions in `The Deployment Package` and `Deployment` sections of the Conversational Chatbot lab: https://catalog.us-east-1.prod.workshops.aws/workshops/0b6e72fe-77ee-4777-98cc-237eec795fdb/en-US/fm/06-chatbot ...
 
-6. Follow the test instructions in the `Deployment` section.
+6. Execute test instructions in the `Deployment` section.
