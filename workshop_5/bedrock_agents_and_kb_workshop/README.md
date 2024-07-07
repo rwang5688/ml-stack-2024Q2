@@ -15,23 +15,26 @@ https://catalog.us-east-1.prod.workshops.aws/workshops/3008d94a-eaf7-477f-8b70-b
 Detailed Steps:
 
 - Download source:
- - https://static.us-east-1.prod.workshops.aws/public/e54460c6-1688-421f-8800-4123d98f509a/static/workshop-labs.zip
+  - https://static.us-east-1.prod.workshops.aws/public/e54460c6-1688-421f-8800-4123d98f509a/static/workshop-labs.zip
+
+- IGNORE CloudFormation template: `Code/workshop-stack.yaml`.
+  - This template deploys a SageMaker Domain, and then adds SageMaker Studio Classic app.  We do not want this app.
 
 - Deploy Cloudormation template: `Code/workshop-stack-s3-buckets.yaml`.
- - This template will create a bucket with name: `workshop-stack-s3-buckets-${AWS::AccountId}-bedrock-courses-cat`.
- - Plus this template will add three prefixes: `course-registration`, `course-reviews`, `knowledge-base`.
+  - This template will create a bucket with name: `workshop-stack-s3-buckets-${AWS::AccountId}-bedrock-courses-cat`.
+  - Plus this template will add three prefixes: `course-registration`, `course-reviews`, `knowledge-base`.
 
 - Make sure SageMaker Execution Role has sufficient access for:
- - Amazon Bedrock (bedrock:*)
- - Amazon OpenSearch Service (aFoss:*)
- - Amazon SageMaker (AmazonSageMakerFullAccess)
- - Amazon S3 (AmazonS3FullAccess)
- - AWS CloudFormation (AWSCloudFormationFullAccess)
- - AWS IAM (IAMFullAccess)
- - AWS Lambda (AWSLambdaFullAccess)
- - OR:
- - PowerUserAccess
- - AWS IAM (IAMFullAccess)
+  - Amazon Bedrock (bedrock:*)
+  - Amazon OpenSearch Service (aFoss:*)
+  - Amazon SageMaker (AmazonSageMakerFullAccess)
+  - Amazon S3 (AmazonS3FullAccess)
+  - AWS CloudFormation (AWSCloudFormationFullAccess)
+  - AWS IAM (IAMFullAccess)
+  - AWS Lambda (AWSLambdaFullAccess)
+- OR:
+  - PowerUserAccess
+  - AWS IAM (IAMFullAccess)
 
 - Create, run, and open JupyterLab space, e.g., `bedrock-agents-and-kb-workshop`.
 
