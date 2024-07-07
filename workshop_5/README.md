@@ -1,4 +1,4 @@
-## AWS Workshop 5 - Streamlit Apps with Amazon Bedrock and LangChain
+## AWS Workshop 5 - App Development with Amazon Bedrock (LangChain, Converse API, Agents API)
 
 ### Building with Amazon Bedrock and LangChain Workshop
 
